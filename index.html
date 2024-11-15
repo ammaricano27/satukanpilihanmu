@@ -18,50 +18,6 @@
 </head>
 
 <body>
-    <button class="scroll-top-btn">
-        <svg class="progress-ring" width="70" height="70"> <!-- Ubah ukuran SVG -->
-            <circle class="progress-ring__circle" r="22" cx="25" cy="25" />
-            <!-- Sesuaikan radius dan posisi circle -->
-        </svg>
-    </button>
-    <script type="text/javascript">
-        const scrollButton = document.querySelector('.scroll-top-btn');
-        const circle = document.querySelector('.progress-ring__circle');
-        const radius = circle.r.baseVal.value;
-        const circumference = radius * 2 * Math.PI;
-
-        circle.style.strokeDasharray = `${circumference} ${circumference}`;
-        circle.style.strokeDashoffset = circumference;
-
-        function setProgress(percent) {
-            const offset = circumference - (percent / 100 * circumference);
-            circle.style.strokeDashoffset = offset;
-        }
-
-        function updateScroll() {
-            const scrollTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = window.scrollY;
-            const scrollPercent = (scrolled / scrollTotal) * 100;
-
-            setProgress(scrollPercent);
-
-            if (scrolled > 300) {
-                scrollButton.style.display = 'flex';
-            } else {
-                scrollButton.style.display = 'none';
-            }
-        }
-
-        scrollButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        window.addEventListener('scroll', updateScroll);
-    </script>
-
     <header id="header" class="fixed top-0 w-full h-16 z-50">
         <div class="w-full h-full mx-auto px-5 max-w-screen-xl">
             <div class="relative h-full w-full">
@@ -132,7 +88,50 @@
             </a>
         </nav>
     </div>
-    <main class="">
+    <main class="w-full overflow-hidden">
+        <button class="scroll-top-btn">
+            <svg class="progress-ring" width="70" height="70"> <!-- Ubah ukuran SVG -->
+                <circle class="progress-ring__circle" r="22" cx="25" cy="25" />
+                <!-- Sesuaikan radius dan posisi circle -->
+            </svg>
+        </button>
+        <script type="text/javascript">
+            const scrollButton = document.querySelector('.scroll-top-btn');
+            const circle = document.querySelector('.progress-ring__circle');
+            const radius = circle.r.baseVal.value;
+            const circumference = radius * 2 * Math.PI;
+
+            circle.style.strokeDasharray = `${circumference} ${circumference}`;
+            circle.style.strokeDashoffset = circumference;
+
+            function setProgress(percent) {
+                const offset = circumference - (percent / 100 * circumference);
+                circle.style.strokeDashoffset = offset;
+            }
+
+            function updateScroll() {
+                const scrollTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = window.scrollY;
+                const scrollPercent = (scrolled / scrollTotal) * 100;
+
+                setProgress(scrollPercent);
+
+                if (scrolled > 300) {
+                    scrollButton.style.display = 'flex';
+                } else {
+                    scrollButton.style.display = 'none';
+                }
+            }
+
+            scrollButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            window.addEventListener('scroll', updateScroll);
+        </script>
         <section id="home"
             class="relative w-full bg-[#242F9B] text-white rounded-br-[3rem] lg:rounded-br-[4rem]">
             <div class="relative min-h-screen w-full flex items-center justify-center">
