@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
     <title>Osis Next Level</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +21,8 @@
 <body>
     <header id="header" class="fixed top-0 w-full h-16 z-50">
         <div class="w-full h-full mx-auto px-5 max-w-screen-xl">
-            <div class="relative h-full w-full">
-                <div class="absolute left-0 top-1/2 -translate-y-1/2 flex gap-1 font-semibold">
+            <div class="relative h-full w-full flex justify-between items-center">
+                <div class="flex gap-1 font-semibold">
                     <a href="/"
                         class="flex gap-1 text-current hover:text-slate-50 transition-colors duration-300 ease-in-out">
                         <!-- <svg class="size-6 fill-current">
@@ -31,7 +32,7 @@
                             Nadia</div>
                     </a>
                 </div>
-                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                <div class="">
                     <nav class="hidden md:flex items-center justify-center text-sm gap-4 text-white">
                         <a href="#home"
                             class="h-8 rounded-full px-3 text-current flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/20 nav-link text-yellow-400">Beranda
@@ -152,10 +153,10 @@
                 class="rounded-tl-[3rem] lg:rounded-tl-[4rem] min-h-screen h-full w-full flex items-center justify-center bg-white">
                 <div class="relative w-full h-full flex items-center justify-center p-4 pt-20">
                     <div class="relative w-full h-full flex flex-col justify-center items-center">
-                        <div class="animate">
+                        <div class="">
                             <p class="text-4xl md:text-5xl mb-8 font-bold text-primary">Visi &amp; Misi</p>
                         </div>
-                        <div class="filter px-2 mb-5 w-full flex flex-wrap md:justify-start justify-center gap-3 animate">
+                        <div class="filter px-2 mb-5 w-full flex flex-wrap md:justify-start justify-center gap-3">
                             <button onclick="setActiveButton(this)" data-filter="*"
                                 class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold text-sm py-2 w-20 border border-primary rounded-lg shadow">Semua</button>
                             <button onclick="setActiveButton(this)" data-filter=".visi"
@@ -183,7 +184,7 @@
                                 firstButton.classList.add('bg-[#242F9B]', 'text-white');
                             });
                         </script>
-                        <div class="f flex flex-wrap flex-row w-full justify-center items-center animate">
+                        <div class="f flex flex-wrap flex-row w-full justify-center items-center">
                             <div class="bg-[#242F9B] rounded-lg visi w-full lg:flex-1 my-2 card group">
                                 <div class="p-4 text-white">
                                     <p class="text-2xl mb-4 font-semibold flex items-center">
@@ -256,7 +257,7 @@
                         <a href="https://flowbite.com/" class="flex items-center">
                             <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" /> -->
                             <span
-                                class="self-center text-2xl font-semibold whitespace-nowrap text-white">Ammar | Nadia <br><small class="text-xs text-wrap">Calon Ketua dan Wakil Ketua OSIS SMK Bina Informatika Masa Bakti 2024-2025</small></span>
+                                class="self-center text-2xl font-semibold text-white">Ammar | Nadia <br><small class="text-xs">Calon Ketua dan Wakil Ketua OSIS SMK Bina Informatika Masa Bakti 2024-2025</small></span>
                         </a>
                     </div>
                     <div class="grid grid-cols-2 gap-10 sm:gap-8">
@@ -273,7 +274,7 @@
                             </ul>
                         </div>
                         <div>
-                            <h2 class="mb-6 text-sm font-semibold uppercase text-white">Follow us
+                            <h2 class="mb-6 text-sm font-semibold uppercase text-white">Follow us <small class="text-xs">(on Instagram)</small>
                             </h2>
                             <ul class="text-white/50 font-medium">
                                 <li class="mb-4">
