@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Poppins", sans-serif;
 }
@@ -20,4 +24,60 @@ body{
 
 #drawer.open {
     height: 100%
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px; /* Ubah ukuran button menjadi 70px */
+    height: 50px; /* Ubah ukuran button menjadi 70px */
+    background-color: white;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-top-btn::before {
+    content: "";
+    width: 15px; /* Perbesar ukuran panah */
+    height: 15px; /* Perbesar ukuran panah */
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    transform: rotate(45deg);
+    margin-top: 6px;
+}
+
+.progress-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px; /* Ubah ukuran SVG menjadi 70px */
+    height: 50px; /* Ubah ukuran SVG menjadi 70px */
+}
+
+.progress-ring__circle {
+    stroke: #242f9b;
+    stroke-width: 5; /* Ubah ketebalan stroke menjadi 5 */
+    fill: transparent;
+    transition: stroke-dashoffset 0.1s;
+    transform: rotate(-90deg);
+    transform-origin: 25px 25px; /* Sesuaikan transform origin */
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease,transform 1s ease
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0)
 }
