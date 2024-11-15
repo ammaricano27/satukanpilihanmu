@@ -89,12 +89,15 @@
                     </nav>
                 </div>
                 <div class="buttons absolute right-0 top-1/2 -translate-y-1/2 flex gap-1">
-                    <a href="https://discord.gg/NAuwJc9Zk8" target="_blank" aria-label="Discord Channel"
-                        class="hidden md:flex size-9 rounded-full p-2 items-center justify-center bg-transparent hover:bg-white/20 stroke-current hover:stroke-white border border-white/25 transition-colors duration-300 ease-in-out">
-                        <svg class="size-full stroke-white">
-                            <use href="public/svg/ui.svg#rss"></use>
+                    <button id="header-drawer-button" aria-label="Toggle drawer open and closed"
+                        class="flex md:hidden size-9 rounded-full p-2 items-center justify-center bg-transparent hover:bg-white/20 stroke-current hover:stroke-white transition-colors duration-300 ease-in-out">
+                        <svg id="drawer-open" class="size-full stroke-white">
+                            <use href="public/svg/ui.svg#menu"></use>
                         </svg>
-                    </a>
+                        <svg id="drawer-close" class="size-full stroke-white">
+                            <use href="public/svg/ui.svg#x"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
