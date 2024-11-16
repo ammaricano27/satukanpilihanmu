@@ -43,6 +43,10 @@
                         <a href="#proker"
                             class="h-8 rounded-full px-3 text-current flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/20 nav-link">Proker
                         </a>
+                        <p>|</p>
+                        <a href="profile"
+                            class="h-8 rounded-full px-3 text-current flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/20 nav-link text-bold">Profil
+                        </a>
                     </nav>
                 </div>
                 <div class="buttons absolute right-0 top-1/2 -translate-y-1/2 flex gap-1">
@@ -76,7 +80,7 @@
         initializeDrawerButton()
     </script>
     <div id="drawer"
-        class="fixed inset-0 h-0 z-40 overflow-hidden flex flex-col items-center justify-center md:hidden bg-[#242F9B]/75 backdrop-blur-md transition-[height] duration-300 ease-in-out">
+        class="fixed inset-0 h-0 z-40 overflow-hidden flex flex-col items-center justify-center md:hidden bg-[#242F9B]/90 transition-[height] duration-300 ease-in-out">
         <nav class="flex flex-col items-center space-y-2 text-white">
             <a href="#home"
                 class="flex items-center justify-center px-3 py-1 rounded-full hover:bg-white/20 transition-colors duration-300 ease-in-out nav-link-drawer text-yellow-400">Beranda
@@ -86,6 +90,9 @@
                 &amp; Misi </a>
             <a href="#proker"
                 class="flex items-center justify-center px-3 py-1 rounded-full text-current hover:bg-white/20 transition-colors duration-300 ease-in-out nav-link-drawer">Proker
+            </a>
+            <a href="profile"
+                class="flex items-center justify-center px-3 py-1 rounded-full text-current hover:bg-white/20 transition-colors duration-300 ease-in-out nav-link-drawer">Profil
             </a>
         </nav>
     </div>
@@ -148,7 +155,7 @@
                 </div>
             </div>
         </section>
-        <section id="visimisi" class="relative min-h-screen w-full bg-[#242F9B] text-black">
+        <section id="visimisi" class="relative min-h-screen h-full w-full bg-[#242F9B] text-black">
             <div
                 class="rounded-tl-[3rem] lg:rounded-tl-[4rem] min-h-screen h-full w-full flex items-center justify-center bg-white">
                 <div class="relative w-full h-full flex items-center justify-center p-4 pt-20">
@@ -160,9 +167,9 @@
                             <button onclick="setActiveButton(this)" data-filter="*"
                                 class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold text-sm py-2 w-20 border border-primary rounded-lg shadow">Semua</button>
                             <button onclick="setActiveButton(this)" data-filter=".visi"
-                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold text-sm py-2 w-20 border border-primary rounded-lg shadow flex items-center justify-center"><ion-icon name="school-outline"></ion-icon> &nbsp; Visi</button>
+                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold text-sm py-2 w-20 border border-primary rounded-lg shadow flex items-center justify-center">Visi</button>
                             <button onclick="setActiveButton(this)" data-filter=".misi"
-                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold text-sm py-2 w-20 border border-primary rounded-lg shadow flex items-center justify-center"><ion-icon name="layers-outline"></ion-icon> &nbsp; Misi</button>
+                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold text-sm py-2 w-20 border border-primary rounded-lg shadow flex items-center justify-center">Misi</button>
                         </div>
                         <script>
                             function setActiveButton(clickedButton) {
@@ -209,7 +216,7 @@
                                     <p class="text-2xl mb-4 font-semibold flex items-center">
                                         <ion-icon name="layers-outline"></ion-icon> &nbsp; Misi</p>
                                     <ul class="list-inside list-disc text-ellipsis">
-                                        <li>Membuat pengurus OSIS SMK Bina Informatika menjadi contoh teladan bagi siswa/i SMK BINA INFORMATIKA dengan memiliki adab dan etika yang unggul dimulai dari penerapan 5S.</li>
+                                        <li>Membuat pengurus OSIS SMK Bina Informatika menjadi contoh teladan bagi siswa/i SMK Bina Informatika dengan memiliki adab dan etika yang unggul dimulai dari penerapan 5S.</li>
                                         <li>Menanamkan jiwa religius kepada siswa/i SMK Bina Informatika dengan melanjutkan program kerja keagamaan yang rutin dilaksanakan setiap minggunya.</li>
                                         <li>Meningkatkan literasi digital siswa agar mampu memanfaatkan teknologi sebagai alat untuk belajar, berkarya, dan berkomunikasi secara efektif.</li>
                                         <li>Memperkuat kebersamaan antar siswa dengan cara Mengadakan kegiatan seperti, kerja bakti, dan donasi bersama, untuk meningkatkan rasa empati dan kebersamaan.</li>
@@ -236,18 +243,39 @@
         <section id="proker" class="relative h-screen w-full bg-white text-current">
             <div class="h-full w-full flex items-center justify-center">
                 <div class="relative w-full h-full flex items-center justify-center">
-                    <div class="">
-                        <div class="animate">
+                    <div class="relative w-full h-full flex flex-col justify-center items-center">
+                        <div class="">
                             <p class="text-4xl md:text-5xl mb-8 font-bold text-primary">Progam Kerja</p>
                         </div>
-                        <div>
-                            <p class="text-xl font-bold text-primary">Coming Soon..</p>
+                        <div class="bg-gray-100 rounded-full flex p-0.5 gap-2">
+                                <button onclick="setActiveButton2(this)" class="button-proker rounded-full p-4 bg-transparent group hover:bg-primary font-semibold text-sm">Jangka Pendek</button>
+                                <button onclick="setActiveButton2(this)" class="button-proker rounded-full p-4 bg-transparent group hover:bg-primary font-semibold text-sm">Jangka Panjang</button>
+                            <script>
+                                function setActiveButton2(clickedButton) {
+                                    // Hapus kelas bg-blue-500 dari semua tombol
+                                    document.querySelectorAll('.button-proker').forEach(btn => {
+                                        btn.classList.remove('bg-white', 'text-[#242F9B]');
+                                        btn.classList.add('bg-transparent', 'text-black');
+                                    });
+
+                                    // Tambahkan kelas bg-blue-500 ke tombol yang diklik
+                                    clickedButton.classList.remove('bg-transparent', 'text-black');
+                                    clickedButton.classList.add('bg-white', 'text-[#242F9B]');
+                                }
+
+                                // Set tombol pertama aktif saat halaman dimuat
+                                document.addEventListener('DOMContentLoaded', () => {
+                                    const firstButton = document.querySelector('.button-proker');
+                                    firstButton.classList.remove('bg-transparent', 'text-black');
+                                    firstButton.classList.add('bg-white', 'text-[#242F9B]');
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="bg-[#242F9B] rounded-t-xl lg:rounded-t-2xl">
+        <footer class="bg-[#242F9B] rounded-t-2xl lg:rounded-t-3xl">
             <div class="mx-auto w-full max-w-screen-xl p-4 py-8 lg:py-10">
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
