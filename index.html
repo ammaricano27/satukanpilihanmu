@@ -91,6 +91,7 @@
             <a href="#proker"
                 class="flex items-center justify-center px-3 py-1 rounded-full text-current hover:bg-white/20 transition-colors duration-300 ease-in-out nav-link-drawer">Proker
             </a>
+            <hr class="bg-white h-[1px] w-full">
             <a href="profile"
                 class="flex items-center justify-center px-3 py-1 rounded-full text-current hover:bg-white/20 transition-colors duration-300 ease-in-out nav-link-drawer">Profil
             </a>
@@ -164,13 +165,13 @@
                         <div class="">
                             <p class="text-4xl md:text-5xl mb-8 font-bold text-primary">Visi &amp; Misi</p>
                         </div>
-                        <div class="filter px-2 mb-5 w-full flex flex-wrap md:justify-start justify-center gap-3">
+                        <div class="filter px-2 mb-5 w-full flex flex-wrap justify-center md:justify-start gap-4">
                             <button onclick="setActiveButton(this)" data-filter="*"
-                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold text-sm py-2 w-20 border border-primary rounded-lg shadow">Semua</button>
+                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold py-3 px-4  border border-primary rounded-lg shadow">Semua</button>
                             <button onclick="setActiveButton(this)" data-filter=".visi"
-                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold text-sm py-2 w-20 border border-primary rounded-lg shadow flex items-center justify-center">Visi</button>
+                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold py-3 px-4 border border-primary rounded-lg shadow flex items-center justify-center"><ion-icon name="school-outline"></ion-icon> &nbsp; Visi</button>
                             <button onclick="setActiveButton(this)" data-filter=".misi"
-                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold text-sm py-2 w-20 border border-primary rounded-lg shadow flex items-center justify-center">Misi</button>
+                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold py-3 px-4 border border-primary rounded-lg shadow flex items-center justify-center"><ion-icon name="layers-outline"></ion-icon> &nbsp; Misi</button>
                         </div>
                         <script>
                             function setActiveButton(clickedButton) {
@@ -225,15 +226,14 @@
                                         <ion-icon name="layers-outline"></ion-icon> &nbsp; Misi
                                     </p>
                                     <ul class="list-inside list-disc text-ellipsis flex flex-col gap-4">
-                                        <li>Membuat pengurus OSIS SMK Bina Informatika menjadi contoh teladan bagi
-                                            siswa/i SMK Bina Informatika dengan memiliki adab dan etika yang unggul
+                                        <li><span class="font-semibold">Membuat</span> OSIS SMK Bina Informatika menjadi contoh teladan bagi
+                                            siswa dan siswi SMK Bina Informatika dengan memiliki adab dan etika yang unggul
                                             dimulai dari penerapan 5S.</li>
-                                        <li>Menanamkan jiwa religius kepada siswa/i SMK Bina Informatika dengan
+                                        <li><span class="font-semibold">Menanamkan</span> jiwa religius kepada siswa dan siswi SMK Bina Informatika dengan
                                             melanjutkan program kerja keagamaan yang rutin dilaksanakan setiap
                                             minggunya.</li>
-                                        <li>Meningkatkan literasi digital siswa agar mampu memanfaatkan teknologi
-                                            sebagai alat untuk belajar, berkarya, dan berkomunikasi secara efektif.</li>
-                                        <li>Memperkuat kebersamaan antar siswa dengan cara Mengadakan kegiatan seperti,
+                                        <li><span class="font-semibold">Meningkatkan</span> kemampuan literasi siswa dan siswi SMK Bina Informatika agar mampu menyampaikan ide-ide atau pendapat mereka secara lisan maupun tulisan serta mereka dapat menganalisis sesuatu dalam bentuk tulisan.</li>
+                                        <li><span class="font-semibold">Memperkuat</span> kebersamaan antar dan siswi SMK Bina Informatika dengan cara Mengadakan kegiatan seperti,
                                             kerja bakti, dan donasi bersama, untuk meningkatkan rasa empati dan
                                             kebersamaan.</li>
                                     </ul>
@@ -264,7 +264,7 @@
                         <div class="">
                             <p class="text-4xl md:text-5xl mb-8 font-bold text-primary">Program Kerja</p>
                         </div>
-                        <div class="bg-gray-100 rounded-full flex p-0.5 gap-1 mx-6">
+                        <div class="bg-gray-100 rounded-full flex p-0.5 gap-1 mx-4">
                             <button onclick="setActiveButton2(this)"
                                 class="button-proker rounded-full p-4 bg-transparent group hover:bg-primary font-semibold text-xs">Tampilkan Semua</button>
                             <button onclick="setActiveButton2(this)"
@@ -294,43 +294,43 @@
                                 });
                             </script>
                         </div>
-                        <div class="flex flex-wrap gap-4 mx-4 justify-center mt-16">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-2 mt-8">
                             <div
-                                class="slide-up relative bg-primary text-black m-2 p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg shadow-lg w-full md:w-[calc(50%-50px)] lg:w-[calc(30%-60px)]">
-                                <p class="font-semibold text-md mb-2">GeLi (Gerakan Literasi)</p>
-                                <p class="">Kegiatan pembiasaan membaca yang akan dilakuan setiap 2 minggu sekali, untuk
-                                    meningkatkan kemampuan litersi siswa/i</p>
+                                class="slide-up relative bg-primary m-2 p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
+                                <p class="font-semibold mb-2 text-gray-800 text-xl">GeLi (Gerakan Literasi)</p>
+                                <p class="text-gray-600">Kegiatan pembiasaan membaca yang akan dilakuan setiap 2 minggu sekali, untuk
+                                    meningkatkan kemampuan litersi dan siswi SMK Bina Informatika</p>
                             </div>
                             <div
-                                class="slide-up relative bg-primary text-black m-2 p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg shadow-lg w-full md:w-[calc(50%-50px)] lg:w-[calc(30%-60px)]">
-                                <p class="font-semibold text-md mb-2">Lorem ipsum dolor sit.</p>
-                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                                class="slide-up relative bg-primary m-2 p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
+                                <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit.</p>
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
                                     voluptatibus vel quibusdam. Reprehenderit voluptatem in quidem reiciendis, dolore
                                     repellat quis?</p>
                             </div>
                             <div
-                                class="slide-up relative bg-primary text-black m-2 p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg shadow-lg w-full md:w-[calc(50%-50px)] lg:w-[calc(30%-60px)]">
-                                <p class="font-semibold text-md mb-2">Lorem ipsum dolor sit.</p>
-                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quae
+                                class="slide-up relative bg-primary m-2 p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
+                                <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit.</p>
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quae
                                     dicta? Accusantium voluptatibus tenetur corrupti eligendi, suscipit veritatis!</p>
                             </div>
                             <div
-                                class="slide-up relative bg-primary text-black m-2 p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg shadow-lg w-full md:w-[calc(50%-50px)] lg:w-[calc(30%-60px)]">
-                                <p class="font-semibold text-md mb-2">Lorem ipsum dolor sit amet consectetur.</p>
-                                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum officia,
+                                class="slide-up relative bg-primary m-2 p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
+                                <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit amet consectetur.</p>
+                                <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum officia,
                                     delectus harum vitae eaque mollitia voluptatem molestias nemo, fuga repudiandae
                                     minima earum.</p>
                             </div>
                             <div
-                                class="slide-up relative bg-primary text-black m-2 p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg shadow-lg w-full md:w-[calc(50%-50px)] lg:w-[calc(30%-60px)]">
-                                <p class="font-semibold text-md mb-2">Lorem ipsum dolor sit.</p>
-                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quae
+                                class="slide-up relative bg-primary m-2 p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
+                                <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit.</p>
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quae
                                     dicta? Accusantium voluptatibus tenetur corrupti eligendi, suscipit veritatis!</p>
                             </div>
                             <div
-                                class="slide-up relative bg-primary text-black m-2 p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg shadow-lg w-full md:w-[calc(50%-50px)] lg:w-[calc(30%-60px)]">
-                                <p class="font-semibold text-md mb-2">Lorem ipsum dolor sit amet consectetur.</p>
-                                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum officia,
+                                class="slide-up relative bg-primary m-2 p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
+                                <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit amet consectetur.</p>
+                                <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum officia,
                                     delectus harum vitae eaque mollitia voluptatem molestias nemo, fuga repudiandae
                                     minima earum.</p>
                             </div>
