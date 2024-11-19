@@ -16,6 +16,7 @@
     <script src="public/js/scroll.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -159,7 +160,7 @@
         </section>
         <section id="visimisi" class="relative min-h-screen h-full w-full bg-[#242F9B] text-black ">
             <div
-                class="rounded-tl-[3rem] lg:rounded-tl-[4rem] min-h-screen h-full w-full flex items-center justify-center bg-white pt-24 pb-32">
+                class="rounded-tl-[3rem] lg:rounded-tl-[4rem] min-h-screen h-full w-full flex items-center justify-center bg-white pt-10 pb-32">
                 <div class="relative w-full h-full flex items-center justify-center p-4 pt-10">
                     <div class="relative w-full h-full flex flex-col justify-center items-center">
                         <div class="">
@@ -169,9 +170,11 @@
                             <button onclick="setActiveButton(this)" data-filter="*"
                                 class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold py-3 px-4  border border-primary rounded-lg shadow">Semua</button>
                             <button onclick="setActiveButton(this)" data-filter=".visi"
-                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold py-3 px-4 border border-primary rounded-lg shadow flex items-center justify-center"><ion-icon name="school-outline"></ion-icon> &nbsp; Visi</button>
+                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold py-3 px-4 border border-primary rounded-lg shadow flex items-center justify-center"><ion-icon
+                                    name="school-outline"></ion-icon> &nbsp; Visi</button>
                             <button onclick="setActiveButton(this)" data-filter=".misi"
-                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold py-3 px-4 border border-primary rounded-lg shadow flex items-center justify-center"><ion-icon name="layers-outline"></ion-icon> &nbsp; Misi</button>
+                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold py-3 px-4 border border-primary rounded-lg shadow flex items-center justify-center"><ion-icon
+                                    name="layers-outline"></ion-icon> &nbsp; Misi</button>
                         </div>
                         <script>
                             function setActiveButton(clickedButton) {
@@ -226,14 +229,21 @@
                                         <ion-icon name="layers-outline"></ion-icon> &nbsp; Misi
                                     </p>
                                     <ul class="list-inside list-disc text-ellipsis flex flex-col gap-4">
-                                        <li><span class="font-semibold">Membuat</span> OSIS SMK Bina Informatika menjadi contoh teladan bagi
-                                            siswa dan siswi SMK Bina Informatika dengan memiliki adab dan etika yang unggul
+                                        <li><span class="font-semibold">Membuat</span> OSIS SMK Bina Informatika menjadi
+                                            contoh teladan bagi
+                                            siswa dan siswi SMK Bina Informatika dengan memiliki adab dan etika yang
+                                            unggul
                                             dimulai dari penerapan 5S.</li>
-                                        <li><span class="font-semibold">Menanamkan</span> jiwa religius kepada siswa dan siswi SMK Bina Informatika dengan
+                                        <li><span class="font-semibold">Menanamkan</span> jiwa religius kepada siswa dan
+                                            siswi SMK Bina Informatika dengan
                                             melanjutkan program kerja keagamaan yang rutin dilaksanakan setiap
                                             minggunya.</li>
-                                        <li><span class="font-semibold">Meningkatkan</span> kemampuan literasi siswa dan siswi SMK Bina Informatika agar mampu menyampaikan ide-ide atau pendapat mereka secara lisan maupun tulisan serta mereka dapat menganalisis sesuatu dalam bentuk tulisan.</li>
-                                        <li><span class="font-semibold">Memperkuat</span> kebersamaan antar dan siswi SMK Bina Informatika dengan cara Mengadakan kegiatan seperti,
+                                        <li><span class="font-semibold">Meningkatkan</span> kemampuan literasi siswa dan
+                                            siswi SMK Bina Informatika agar mampu menyampaikan ide-ide atau pendapat
+                                            mereka secara lisan maupun tulisan serta mereka dapat menganalisis sesuatu
+                                            dalam bentuk tulisan.</li>
+                                        <li><span class="font-semibold">Memperkuat</span> kebersamaan antar dan siswi
+                                            SMK Bina Informatika dengan cara Mengadakan kegiatan seperti,
                                             kerja bakti, dan donasi bersama, untuk meningkatkan rasa empati dan
                                             kebersamaan.</li>
                                     </ul>
@@ -258,7 +268,7 @@
             </div>
         </section>
         <section id="proker" class="relative min-h-screen w-full bg-white text-current">
-            <div class="h-full w-full flex items-center justify-center">
+            <div class="h-full w-full flex items-center justify-center pb-10">
                 <div class="relative w-full h-full flex items-center justify-center pt-20">
                     <div class="relative w-full h-full flex flex-col justify-center items-center">
                         <div class="">
@@ -266,7 +276,8 @@
                         </div>
                         <div class="bg-gray-100 rounded-full flex p-0.5 gap-1 mx-4">
                             <button onclick="setActiveButton2(this)"
-                                class="button-proker rounded-full p-4 bg-transparent group hover:bg-primary font-semibold text-xs">Tampilkan Semua</button>
+                                class="button-proker rounded-full p-4 bg-transparent group hover:bg-primary font-semibold text-xs">Tampilkan
+                                Semua</button>
                             <button onclick="setActiveButton2(this)"
                                 class="button-proker rounded-full p-4 bg-transparent group hover:bg-primary font-semibold text-xs">Jangka
                                 Pendek</button>
@@ -298,39 +309,47 @@
                             <div
                                 class="slide-up relative bg-primary p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
                                 <p class="font-semibold mb-2 text-gray-800 text-xl">GeLi (Gerakan Literasi)</p>
-                                <p class="text-gray-600">Kegiatan pembiasaan membaca yang akan dilakuan setiap 2 minggu sekali, untuk
+                                <p class="text-gray-600">Kegiatan pembiasaan membaca yang akan dilakuan setiap 2 minggu
+                                    sekali, untuk
                                     meningkatkan kemampuan litersi dan siswi SMK Bina Informatika</p>
                             </div>
                             <div
                                 class="slide-up relative bg-primary p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
                                 <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit.</p>
-                                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Repellat
                                     voluptatibus vel quibusdam. Reprehenderit voluptatem in quidem reiciendis, dolore
                                     repellat quis?</p>
                             </div>
                             <div
                                 class="slide-up relative bg-primary p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
                                 <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit.</p>
-                                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quae
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Aliquam, quae
                                     dicta? Accusantium voluptatibus tenetur corrupti eligendi, suscipit veritatis!</p>
                             </div>
                             <div
                                 class="slide-up relative bg-primary p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
-                                <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit amet consectetur.</p>
-                                <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum officia,
+                                <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit amet
+                                    consectetur.</p>
+                                <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Laborum officia,
                                     delectus harum vitae eaque mollitia voluptatem molestias nemo, fuga repudiandae
                                     minima earum.</p>
                             </div>
                             <div
                                 class="slide-up relative bg-primary p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
                                 <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit.</p>
-                                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quae
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Aliquam, quae
                                     dicta? Accusantium voluptatibus tenetur corrupti eligendi, suscipit veritatis!</p>
                             </div>
                             <div
                                 class="slide-up relative bg-primary p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
-                                <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit amet consectetur.</p>
-                                <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum officia,
+                                <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit amet
+                                    consectetur.</p>
+                                <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Laborum officia,
                                     delectus harum vitae eaque mollitia voluptatem molestias nemo, fuga repudiandae
                                     minima earum.</p>
                             </div>
@@ -340,7 +359,7 @@
                 </div>
             </div>
         </section>
-        <footer class="bg-[#242F9B] rounded-t-2xl lg:rounded-t-3xl">
+        <footer class="bg-[#242F9B] rounded-t-xl lg:rounded-t-3xl">
             <div class="mx-auto w-full max-w-screen-xl p-4 py-8 lg:py-10">
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
@@ -412,6 +431,14 @@
             })
         })
 
+        ScrollReveal().reveal(".slide-up", {
+            duration: 1000,
+            interval: 200,
+            origin: "bottom", // Arah munculnya animasi (bisa 'top', 'left', 'right', atau 'bottom')
+            distance: "100px", // Jarak elemen bergerak dalam animasi
+            easing: "ease-in-out", // Gaya easing animasi
+            reset: false, // Hanya animasi saat pertama kali terlihat
+        });
     </script>
 </body>
 
