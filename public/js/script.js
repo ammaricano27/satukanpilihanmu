@@ -1,3 +1,4 @@
+//background header on scroll
 function onScroll() {
     const header = document.getElementById("header")
     if (window.scrollY > 0) {
@@ -11,7 +12,7 @@ function onScroll() {
 
 document.addEventListener("scroll", onScroll)
 
-
+//link active navbar
 function navbar() {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -36,7 +37,7 @@ function navbar() {
 
 document.addEventListener("scroll", navbar)
 
-
+//hamburger menu
 function drawerNavbar() {
     const sections = document.querySelectorAll('section');
     let drawerLinks = document.querySelectorAll('.nav-link-drawer')
@@ -57,7 +58,7 @@ function drawerNavbar() {
 
 document.addEventListener("scroll", drawerNavbar)
 
-
+//animate show element
 function animate() {
     const animateElements = document.querySelectorAll('.animate')
 
