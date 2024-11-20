@@ -766,6 +766,10 @@ video {
   min-height: 100vh;
 }
 
+.min-h-20 {
+  min-height: 5rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -788,6 +792,10 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.min-w-20 {
+  min-width: 5rem;
 }
 
 .max-w-screen-xl {
@@ -914,6 +922,14 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .rounded-t-xl {
