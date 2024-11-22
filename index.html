@@ -81,7 +81,7 @@
         initializeDrawerButton()
     </script>
     <div id="drawer"
-        class="fixed inset-0 h-0 z-40 overflow-hidden flex flex-col items-center justify-center md:hidden bg-[#242F9B]/90 transition-[height] duration-300 ease-in-out">
+        class="fixed inset-0 h-0 z-40 overflow-hidden flex flex-col items-center justify-center md:hidden bg-primary/90 transition-[height] duration-300 ease-in-out">
         <nav class="flex flex-col items-center space-y-2 text-white">
             <a href="#home"
                 class="flex items-center justify-center px-3 py-1 rounded-full hover:bg-white/20 transition-colors duration-300 ease-in-out nav-link-drawer text-yellow-400">Beranda
@@ -142,7 +142,7 @@
 
             window.addEventListener('scroll', updateScroll);
         </script>
-        <section id="home" class="relative w-full bg-[#242F9B] text-white rounded-br-[3rem] lg:rounded-br-[4rem]">
+        <section id="home" class="relative w-full bg-primary text-white rounded-br-[3rem] lg:rounded-br-[4rem]">
             <div class="relative min-h-screen w-full flex items-center justify-center">
                 <div class="relative w-full h-full flex items-center justify-center">
                     <div class=" mx-auto px-5 max-w-screen-xl">
@@ -158,47 +158,47 @@
                 </div>
             </div>
         </section>
-        <section id="visimisi" class="relative min-h-screen h-full w-full bg-[#242F9B] text-black ">
+        <section id="visimisi" class="relative min-h-screen h-full w-full bg-primary text-black ">
             <div
-                class="rounded-tl-[3rem] lg:rounded-tl-[4rem] min-h-screen h-full w-full flex items-center justify-center bg-white pt-10 pb-32">
-                <div class="relative w-full h-full flex items-center justify-center p-4 pt-10">
+                class="rounded-tl-[3rem] lg:rounded-tl-[4rem] min-h-screen h-full w-full flex items-center justify-center bg-white">
+                <div class="relative w-full h-full flex items-center justify-center p-4 pt-32 pb-24 bg-gradient-to-t from-gradient/30">
                     <div class="relative w-full h-full flex flex-col justify-center items-center">
                         <div class="">
                             <p class="text-4xl md:text-5xl mb-8 font-bold text-primary">Visi &amp; Misi</p>
                         </div>
                         <div class="filter px-2 mb-5 w-full flex flex-wrap justify-center md:justify-start gap-4">
                             <button onclick="setActiveButton(this)" data-filter="*"
-                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold py-3 px-4  border border-primary rounded-lg shadow">Semua</button>
+                                class="button-filter bg-transparent group hover:bg-primary hover:text-white text-primary font-semibold py-3 px-4  border border-primary rounded-lg shadow">Semua</button>
                             <button onclick="setActiveButton(this)" data-filter=".visi"
-                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold py-3 px-4 border border-primary rounded-lg shadow flex items-center justify-center"><ion-icon
+                                class="button-filter bg-transparent group hover:bg-primary hover:text-white text-primary font-semibold py-3 px-4 border border-primary rounded-lg shadow flex items-center justify-center"><ion-icon
                                     name="school-outline"></ion-icon> &nbsp; Visi</button>
                             <button onclick="setActiveButton(this)" data-filter=".misi"
-                                class="button-filter bg-transparent group hover:bg-primary text-primary font-semibold py-3 px-4 border border-primary rounded-lg shadow flex items-center justify-center"><ion-icon
+                                class="button-filter bg-transparent group hover:bg-primary hover:text-white text-primary font-semibold py-3 px-4 border border-primary rounded-lg shadow flex items-center justify-center"><ion-icon
                                     name="layers-outline"></ion-icon> &nbsp; Misi</button>
                         </div>
                         <script>
                             function setActiveButton(clickedButton) {
                                 // Hapus kelas bg-blue-500 dari semua tombol
                                 document.querySelectorAll('.button-filter').forEach(btn => {
-                                    btn.classList.remove('bg-[#242F9B]', 'text-white');
+                                    btn.classList.remove('bg-primary', 'text-white');
                                     btn.classList.add('bg-transparent', 'text-black');
                                 });
 
                                 // Tambahkan kelas bg-blue-500 ke tombol yang diklik
                                 clickedButton.classList.remove('bg-transparent', 'text-black');
-                                clickedButton.classList.add('bg-[#242F9B]', 'text-white');
+                                clickedButton.classList.add('bg-primary', 'text-white');
                             }
 
                             // Set tombol pertama aktif saat halaman dimuat
                             document.addEventListener('DOMContentLoaded', () => {
                                 const firstButton = document.querySelector('.button-filter');
                                 firstButton.classList.remove('bg-transparent', 'text-black');
-                                firstButton.classList.add('bg-[#242F9B]', 'text-white');
+                                firstButton.classList.add('bg-primary', 'text-white');
                             });
                         </script>
                         <div class="f flex flex-col gap-4 w-full justify-center items-center h-full">
                             <div
-                                class="slide-up relative bg-[#242F9B] text-white p-6 my-2 hover:-translate-y-1 transition-all duration-500 rounded-lg shadow-lg w-full visi card group inset-x-0">
+                                class="slide-up relative bg-primary text-white p-6 my-2 hover:-translate-y-1 transition-all duration-500 rounded-lg shadow-lg w-full visi card group inset-x-0">
                                 <div class="p-4 text-white">
                                     <p class="text-2xl mb-4 font-semibold flex items-center">
                                         <ion-icon name="school-outline"></ion-icon> &nbsp; Visi
@@ -225,7 +225,7 @@
                                 </div>
                             </div>
                             <div
-                                class="slide-up relative bg-[#242F9B] text-white p-6 my-2 hover:-translate-y-1 transition-all duration-500 rounded-lg shadow-lg w-full misi card group inset-x-0">
+                                class="slide-up relative bg-primary text-white p-6 my-2 hover:-translate-y-1 transition-all duration-500 rounded-lg shadow-lg w-full misi card group inset-x-0">
                                 <div class="p-4 text-white">
                                     <p class="text-2xl mb-4 font-semibold flex items-center">
                                         <ion-icon name="layers-outline"></ion-icon> &nbsp; Misi
@@ -279,7 +279,7 @@
                 </div>
             </div>
         </section>
-        <section id="proker" class="relative min-h-screen w-full bg-white text-current">
+        <section id="proker" class="relative min-h-screen w-full bg-gradient-to-b from-gradient/30 text-current">
             <div class="h-full w-full flex items-center justify-center pb-14">
                 <div class="relative w-full h-full flex items-center justify-center pt-20">
                     <div class="relative w-full h-full flex flex-col justify-center items-center">
@@ -288,45 +288,45 @@
                         </div>
                         <div class="bg-gray-100 rounded-full flex p-0.5 gap-1 mx-4">
                             <button onclick="setActiveButton2(this)"
-                                class="button-proker rounded-full p-4 bg-transparent group hover:bg-primary font-semibold text-xs">Tampilkan
+                                class="button-proker rounded-full p-4 bg-transparent group hover:bg-white font-semibold text-xs">Tampilkan
                                 Semua</button>
                             <button onclick="setActiveButton2(this)"
-                                class="button-proker rounded-full p-4 bg-transparent group hover:bg-primary font-semibold text-xs">Jangka
+                                class="button-proker rounded-full p-4 bg-transparent group hover:bg-white font-semibold text-xs">Jangka
                                 Pendek</button>
                             <button onclick="setActiveButton2(this)"
-                                class="button-proker rounded-full p-4 bg-transparent group hover:bg-primary font-semibold text-xs">Jangka
+                                class="button-proker rounded-full p-4 bg-transparent group hover:bg-white font-semibold text-xs">Jangka
                                 Panjang</button>
                             <script>
                                 function setActiveButton2(clickedButton) {
                                     // Hapus kelas bg-blue-500 dari semua tombol
                                     document.querySelectorAll('.button-proker').forEach(btn => {
-                                        btn.classList.remove('bg-white', 'text-[#242F9B]');
+                                        btn.classList.remove('bg-white', 'text-primary');
                                         btn.classList.add('bg-transparent', 'text-black');
                                     });
 
                                     // Tambahkan kelas bg-blue-500 ketombol yang diklik
                                     clickedButton.classList.remove('bg-transparent', 'text-black');
-                                    clickedButton.classList.add('bg-white', 'text-[#242F9B]');
+                                    clickedButton.classList.add('bg-white', 'text-primary');
                                 }
 
                                 // Set tombol pertama aktif saat halaman dimuat
                                 document.addEventListener('DOMContentLoaded', () => {
                                     const firstButton = document.querySelector('.button-proker');
                                     firstButton.classList.remove('bg-transparent', 'text-black');
-                                    firstButton.classList.add('bg-white', 'text-[#242F9B]');
+                                    firstButton.classList.add('bg-white', 'text-primary');
                                 });
                             </script>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 mt-8">
                             <div
-                                class="slide-up relative bg-primary p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
+                                class="slide-up relative bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full">
                                 <p class="font-semibold mb-2 text-gray-800 text-xl">GeLi (Gerakan Literasi)</p>
                                 <p class="text-gray-600">Kegiatan pembiasaan membaca yang akan dilakuan setiap 2 minggu
                                     sekali, untuk
                                     meningkatkan kemampuan literasi dan siswi SMK Bina Informatika</p>
                             </div>
                             <div
-                                class="slide-up relative bg-primary p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
+                                class="slide-up relative bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full">
                                 <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit.</p>
                                 <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Repellat
@@ -334,14 +334,14 @@
                                     repellat quis?</p>
                             </div>
                             <div
-                                class="slide-up relative bg-primary p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
+                                class="slide-up relative bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full">
                                 <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit.</p>
                                 <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Aliquam, quae
                                     dicta? Accusantium voluptatibus tenetur corrupti eligendi, suscipit veritatis!</p>
                             </div>
                             <div
-                                class="slide-up relative bg-primary p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
+                                class="slide-up relative bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full">
                                 <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit amet
                                     consectetur.</p>
                                 <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -350,14 +350,14 @@
                                     minima earum.</p>
                             </div>
                             <div
-                                class="slide-up relative bg-primary p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
+                                class="slide-up relative bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full">
                                 <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit.</p>
                                 <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Aliquam, quae
                                     dicta? Accusantium voluptatibus tenetur corrupti eligendi, suscipit veritatis!</p>
                             </div>
                             <div
-                                class="slide-up relative bg-primary p-6 hover:-trangray-y-1 transition-all duration-500 rounded-lg shadow-sm border border-gray-200 w-full">
+                                class="slide-up relative bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full">
                                 <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit amet
                                     consectetur.</p>
                                 <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -371,7 +371,7 @@
                 </div>
             </div>
         </section>
-        <footer class="bg-[#242F9B] rounded-t-xl lg:rounded-t-3xl">
+        <footer class="bg-primary">
             <div class="mx-auto w-full max-w-screen-xl p-4 py-8 lg:py-10">
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
