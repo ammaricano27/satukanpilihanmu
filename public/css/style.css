@@ -1059,6 +1059,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-14 {
   padding-bottom: 3.5rem;
 }
@@ -1073,6 +1078,10 @@ video {
 
 .pt-32 {
   padding-top: 8rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-center {
