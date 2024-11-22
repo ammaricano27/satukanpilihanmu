@@ -432,8 +432,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="public/js/isotope.pkgd.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var $grid = $('.f').isotope({
+        var $grid = $('.f').isotope({
             itemSelector: '.card',
             layoutMode: 'fitRows',
         })
@@ -444,12 +443,6 @@
                 filter: value
             })
         })
-
-    setTimeout(function() {
-        iso.layout();
-    }, 100); // 100 ms delay
-});
-
 
         ScrollReveal().reveal(".slide-up", {
             duration: 1000,
