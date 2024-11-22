@@ -619,6 +619,10 @@ video {
   z-index: 50;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -840,6 +844,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-11 {
+  gap: 2.75rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {

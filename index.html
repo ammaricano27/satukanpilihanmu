@@ -166,7 +166,7 @@
                         <div class="">
                             <p class="text-4xl md:text-5xl mb-8 font-bold text-primary">Visi &amp; Misi</p>
                         </div>
-                        <div class="filter px-2 mb-5 w-full flex flex-wrap justify-center md:justify-start gap-4">
+                        <div class="filter mb-5 w-full flex flex-wrap justify-center md:justify-start gap-4">
                             <button onclick="setActiveButton(this)" data-filter="*"
                                 class="button-filter bg-transparent group hover:bg-primary hover:text-white text-primary font-semibold py-3 px-4  border border-primary rounded-lg shadow">Semua</button>
                             <button onclick="setActiveButton(this)" data-filter=".visi"
@@ -196,7 +196,7 @@
                                 firstButton.classList.add('bg-primary', 'text-white');
                             });
                         </script>
-                        <div class="f flex flex-col gap-4 w-full justify-center items-center h-full">
+                        <div class="f flex flex-col w-full justify-center items-center h-full">
                             <div
                                 class="slide-up relative bg-primary text-white p-6 my-2 hover:-translate-y-1 transition-all duration-500 rounded-lg shadow-lg w-full visi card group inset-x-0">
                                 <div class="p-4 text-white">
@@ -437,7 +437,6 @@
         })
         $('.filter button').on("click", function () {
             var value = $(this).attr('data-filter');
-            console.log('value', value)
             $grid.isotope({
                 filter: value
             })
