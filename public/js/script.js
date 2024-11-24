@@ -2,10 +2,12 @@
 function onScroll() {
     const header = document.getElementById("header")
     if (window.scrollY > 0) {
-        header.classList.add("bg-[#242F9B]")
+        header.classList.add("bg-primary/80")
+        header.classList.add("backdrop-blur-sm")
         header.classList.add("shadow")
     } else {
-        header.classList.remove("bg-[#242F9B]")
+        header.classList.remove("bg-primary/80")
+        header.classList.remove("backdrop-blur-sm")
         header.classList.remove("shadow")
     }
 }
@@ -70,3 +72,13 @@ function animate() {
 }
 
 document.addEventListener("DOMContentLoaded", animate)
+
+//counter visitor
+function countVisitors() {
+    fetch("https://counterpro.vercel.app/count/id/name_id")
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("visitors").innerHTML = data.count;
+    })
+}
+document.addEventListener("DOMContentLoaded", countVisitors)
