@@ -20,39 +20,36 @@
 </head>
 
 <body>
-    <header id="header" class="fixed top-0 w-full h-16 z-50">
+    <header id="header" class="fixed top-0 w-full h-16 z-50 text-white transition-colors duration-300 ease">
         <div class="w-full h-full mx-auto px-5 max-w-screen-xl">
             <div class="relative h-full w-full flex justify-between items-center">
                 <div class="flex gap-1 font-semibold">
                     <a href="/"
-                        class="flex gap-1 text-current hover:text-slate-50 transition-colors duration-300 ease-in-out">
-                        <!-- <svg class="size-6 fill-current">
-        <use href="/brand.svg#brand"></use>
-      </svg> -->
-                        <div class="text-white">Ammar <span class="text-yellow-400">|</span>
-                            Nadia</div>
+                        class="flex gap-1 text-current hover:text-slate-50 ">
+                        <img src="../public/img/logo.png" alt="" class="w-6 h-6">
+                        <div class=""><span class="text-yellow-400">|</span> Ammar - Nadia</div>
                     </a>
                 </div>
                 <div class="">
-                    <nav class="hidden md:flex items-center justify-center text-sm gap-4 text-white">
+                    <nav class="hidden md:flex items-center justify-center text-sm gap-4">
                         <a href="#home"
-                            class="h-8 rounded-full px-3 text-current flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/20">Beranda
+                            class="h-8 rounded-full px-3 text-current flex items-center justify-center  hover:bg-white/20">Beranda
                         </a>
                         <a href="#visimisi"
-                            class="h-8 rounded-full px-3 text-current flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/20">Visi
+                            class="h-8 rounded-full px-3 text-current flex items-center justify-center  hover:bg-white/20">Visi
                             &amp; Misi </a>
                         <a href="#proker"
-                            class="h-8 rounded-full px-3 text-current flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/20">Proker
+                            class="h-8 rounded-full px-3 text-current flex items-center justify-center  hover:bg-white/20">Proker
                         </a>
                         <p>|</p>
                         <a href="/../public/profil/"
-                            class="h-8 rounded-full px-3 text-current flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/20 text-bold text-yellow-400">Profil
+                            class="h-8 rounded-full px-3 text-current flex items-center justify-center  hover:bg-white/20 text-bold text-yellow-400">Profil
                         </a>
                     </nav>
                 </div>
                 <div class="buttons absolute right-0 top-1/2 -translate-y-1/2 flex gap-1">
                     <button id="header-drawer-button" aria-label="Toggle drawer open and closed"
-                        class="flex md:hidden size-9 rounded-full p-2 items-center justify-center bg-transparent hover:bg-white/20 stroke-current hover:stroke-white transition-colors duration-300 ease-in-out">
+                        class="flex md:hidden size-9 rounded-full p-2 items-center justify-center bg-transparent hover:bg-white/20 stroke-current hover:stroke-white ">
                         <svg id="drawer-open" class="size-full stroke-white">
                             <use href="../public/svg/ui.svg#menu"></use>
                         </svg>
@@ -84,17 +81,17 @@
         class="fixed inset-0 h-0 z-40 overflow-hidden flex flex-col items-center justify-center md:hidden bg-[#242F9B]/90 transition-[height] duration-300 ease-in-out">
         <nav class="flex flex-col items-center space-y-2 text-white">
             <a href="#home"
-                class="flex items-center justify-center px-3 py-1 rounded-full hover:bg-white/20 transition-colors duration-300 ease-in-out">Beranda
+                class="flex items-center justify-center px-3 py-1 rounded-full hover:bg-white/20 ">Beranda
             </a>
             <a href="#visimisi"
-                class="flex items-center justify-center px-3 py-1 rounded-full text-current hover:bg-white/20 transition-colors duration-300 ease-in-out">Visi
+                class="flex items-center justify-center px-3 py-1 rounded-full text-current hover:bg-white/20 ">Visi
                 &amp; Misi </a>
             <a href="#proker"
-                class="flex items-center justify-center px-3 py-1 rounded-full text-current hover:bg-white/20 transition-colors duration-300 ease-in-out">Proker
+                class="flex items-center justify-center px-3 py-1 rounded-full text-current hover:bg-white/20 ">Proker
             </a>
             <hr class="bg-white h-[1px] w-full">
             <a href="/../public/profil/"
-                class="flex items-center justify-center px-3 py-1 rounded-full text-current hover:bg-white/20 transition-colors duration-300 ease-in-out text-yellow-400">Profil
+                class="flex items-center justify-center px-3 py-1 rounded-full text-current hover:bg-white/20  text-yellow-400">Profil
             </a>
         </nav>
     </div>
@@ -143,19 +140,21 @@
             window.addEventListener('scroll', updateScroll);
         </script>
 
-        <section id="home"
-            class="relative w-full bg-gradient-to-b from-primary text-current text-white overflow-hidden py-12">
-            <div class="absolute inset-0 bg-[url('../public/img/bifor-rain.jpg')] bg-cover bg-center opacity-20 z-0"></div>
+        <section id="beranda"
+            class="relative w-full bg-gradient-to-t from-primary to-blue-400/50 text-current text-white overflow-hidden rounded-bl-[4rem] pt-8 pb-14">
+            <div class="absolute inset-0 bg-cover bg-center -z-10"
+                style="background-image: url(../public/img/bifor-rain.jpg)"></div>
             <div class="relative min-h-screen w-full flex items-center justify-center">
                 <div class="relative w-full h-full flex items-center justify-center">
-                    <div class="mx-auto p-4">
+                    <div class="max-w-screen-xl p-4">
                         <p class="animate text-center text-sm mb-6">Temui paslon nomor urut 1 dimanapun</p>
 
                         <div class="w-full flex flex-col gap-4 md:flex-row">
                             <div class="w-full h-full bg-black/10 backdrop-blur-md rounded-xl">
                                 <div class="p-4 text-white">
                                     <div class="flex gap-4 items-center">
-                                        <img src="../public/img/bifor-rain.jpg" alt="" class="min-w-20 min-h-20 w-20 h-20 rounded">
+                                        <img src="../public/img/bifor-rain.jpg" alt=""
+                                            class="min-w-20 min-h-20 w-20 h-20 rounded">
                                         <div class="">
                                             <p class="text-xl font-semibold flex items-center">Ammar Abdul M</p>
                                             <p class="text-sm text-white/50">Murid SMK Bina Informatika</p>
@@ -203,12 +202,14 @@
                                 <div class="w-full h-full bg-black/10 backdrop-blur-md rounded-xl">
                                     <div class="p-4 text-white">
                                         <div class="flex gap-4 items-center">
-                                            <img src="../public/img/bifor-rain.jpg" alt="" class="min-w-20 min-h-20 w-20 h-20 rounded">
+                                            <img src="../public/img/bifor-rain.jpg" alt=""
+                                                class="min-w-20 min-h-20 w-20 h-20 rounded">
                                             <div class="">
                                                 <p class="text-xl font-semibold flex items-center">Nadia Fitra Putri S.
                                                 </p>
                                                 <p class="text-sm text-white/50">Murid SMK Bina Informatika</p>
-                                                <p class="text-sm text-white/50">Calon wakil ketua OSIS masa bakti 2024-2025
+                                                <p class="text-sm text-white/50">Calon wakil ketua OSIS masa bakti
+                                                    2024-2025
                                                 </p>
                                             </div>
 

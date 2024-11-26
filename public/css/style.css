@@ -619,13 +619,8 @@ video {
   z-index: 50;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+.-z-10 {
+  z-index: -10;
 }
 
 .mx-4 {
@@ -778,6 +773,10 @@ video {
   max-width: 1280px;
 }
 
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -897,6 +896,10 @@ video {
   border-top-left-radius: 3rem;
 }
 
+.rounded-bl-\[4rem\] {
+  border-bottom-left-radius: 4rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -959,6 +962,10 @@ video {
   background-color: rgb(255 255 255 / 0.1);
 }
 
+.bg-white\/80 {
+  background-color: rgb(255 255 255 / 0.8);
+}
+
 .bg-\[url\(\'\.\.\/public\/img\/bifor-rain\.jpg\'\)\] {
   background-image: url('../public/img/bifor-rain.jpg');
 }
@@ -981,6 +988,10 @@ video {
   --tw-gradient-from: #242F9B var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(36 47 155 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-blue-400\/50 {
+  --tw-gradient-to: rgb(96 165 250 / 0.5) var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -1054,6 +1065,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1076,6 +1092,14 @@ video {
 
 .pt-44 {
   padding-top: 11rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-center {
@@ -1367,10 +1391,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
