@@ -619,6 +619,15 @@ video {
   z-index: 50;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -627,6 +636,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mb-0\.5 {
@@ -673,18 +687,6 @@ video {
   margin-top: 1.5px;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-\[1px\] {
-  margin-top: 1px;
-}
-
-.mt-\[2px\] {
-  margin-top: 2px;
-}
-
 .flex {
   display: flex;
 }
@@ -728,6 +730,10 @@ video {
   height: 1rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -738,10 +744,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-6 {
-  height: 1.5rem;
 }
 
 .min-h-20 {
@@ -760,16 +762,12 @@ video {
   width: 1rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-6 {
   width: 1.5rem;
 }
 
-.w-8 {
-  width: 2rem;
+.w-full {
+  width: 100%;
 }
 
 .min-w-20 {
@@ -961,8 +959,8 @@ video {
   background-color: rgb(255 255 255 / 0.1);
 }
 
-.bg-\[url\(\'\.\.\/img\/bifor-rain\.jpg\'\)\] {
-  background-image: url('../img/bifor-rain.jpg');
+.bg-\[url\(\'\.\.\/public\/img\/bifor-rain\.jpg\'\)\] {
+  background-image: url('../public/img/bifor-rain.jpg');
 }
 
 .bg-gradient-to-b {
